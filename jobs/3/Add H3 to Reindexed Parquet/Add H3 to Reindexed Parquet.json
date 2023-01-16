@@ -27,7 +27,7 @@
   "sourceControlDetails" : {
     "provider" : "GITHUB",
     "repository" : "Jua_Code_Challenge",
-    "branch" : "main",
-    "folder" : "jobs/Add H3 to Reindexed Parquet"
+    "branch" : "glue-jobs-update",
+    "folder" : "jobs/3/Add H3 to Reindexed Parquet"
   }
 }
