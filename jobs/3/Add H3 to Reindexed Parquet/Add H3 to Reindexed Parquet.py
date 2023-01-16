@@ -3,7 +3,7 @@ from awswrangler import s3
 import pandas as pd
 import h3
 
-
+# Cycle through each day of the month of May, 2022
 for day in range(1,32):
     file_date = f'2022-05-{day:02d}'
     s3_url = f's3://jua-code-challenge-data/data/precipitation_data/reindexed_parquet_by_day/precipitation_{file_date}.parquet.gzip'
