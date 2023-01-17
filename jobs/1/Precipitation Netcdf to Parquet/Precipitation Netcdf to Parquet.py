@@ -16,7 +16,6 @@ var = 'precipitation_amount_1hour_Accumulation'
 # File path patterns for remote S3 objects and corresponding local file
 s3_data_ptrn = '{year}/{month}/data/{var}.nc'
 data_file_ptrn = '{year}{month}_{var}.nc'
-
 year = date.strftime('%Y')
 month = date.strftime('%m')
 s3_data_key = s3_data_ptrn.format(year=year, month=month, var=var)

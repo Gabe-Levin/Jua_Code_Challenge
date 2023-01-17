@@ -7,14 +7,14 @@
   },
   "command" : {
     "name" : "pythonshell",
-    "scriptLocation" : "s3://aws-glue-assets-588810584888-eu-central-1/scripts/Precipitation Netcdf to Parquet.py",
+    "scriptLocation" : "s3://jua-code-challenge-data/scripts/Precipitation Netcdf to Parquet.py",
     "pythonVersion" : "3.9"
   },
   "defaultArguments" : {
     "--extra-py-files" : "s3://jua-code-challenge-data/requirements/h5netcdf-1.1.0-py2.py3-none-any.whl,s3://jua-code-challenge-data/requirements/xarray-2022.12.0-py3-none-any.whl",
     "--enable-job-insights" : "false",
     "--job-language" : "python",
-    "--TempDir" : "s3://aws-glue-assets-588810584888-eu-central-1/temporary/",
+    "--TempDir" : "s3://jua-code-challenge-data/temp/",
     "--enable-glue-datacatalog" : "true",
     "library-set" : "analytics"
   },
