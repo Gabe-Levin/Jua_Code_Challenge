@@ -7,14 +7,14 @@
   },
   "command" : {
     "name" : "pythonshell",
-    "scriptLocation" : "s3://aws-glue-assets-588810584888-eu-central-1/scripts/Add H3 to Reindexed Parquet.py",
+    "scriptLocation" : "s3://jua-code-challenge-data/scripts/Add H3 to Reindexed Parquet.py",
     "pythonVersion" : "3.9"
   },
   "defaultArguments" : {
     "--extra-py-files" : "s3://jua-code-challenge-data/requirements/awswrangler-2.19.0-py3-none-any.whl,s3://jua-code-challenge-data/requirements/h3-3.7.6-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
     "--enable-job-insights" : "false",
     "--job-language" : "python",
-    "--TempDir" : "s3://aws-glue-assets-588810584888-eu-central-1/temporary/",
+    "--TempDir" : "s3://jua-code-challenge-data/temp/",
     "--enable-glue-datacatalog" : "true",
     "library-set" : "analytics"
   },
