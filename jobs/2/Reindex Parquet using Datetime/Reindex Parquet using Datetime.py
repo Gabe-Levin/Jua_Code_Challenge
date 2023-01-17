@@ -15,11 +15,11 @@ for day in range(1,32):
     for df in dfs:
         # Reset index so the time1 is only index and convert to datetime
         df_time_index = df.reset_index(level=['lon','lat','nv'])
-        pd.to_datetime(df_time_index.index)
+        df_time_index.index = pd.to_datetime(df_time_index.index)
         
-        # Combine chucked dataframes
-        df_by_day = df_by_day.append(df_time_index,ignore_index=True)
+        # Combine chunked dataframes
+        df_by_day = df_by_day.append(df,ignore_index=True)
     
     # Save result to a different s3 directory
-    s3_url = f's3://jua-code-challenge-data/data/precipitation_data/reindexed_parquet_by_day_wH3/precipitation_{file_date}.parquet.gzip'
-    s3.to_parquet(df=df_by_day, path=s3_url, compression='gzip')
+    s3_url = f's3://jua-code-challenge-data/data/precipitation_data/reindexed_parquet_by_day/precipitation_{file_date}.parquet'
+    s3.to_parquet(df=df_by_day, path=s3_url)
