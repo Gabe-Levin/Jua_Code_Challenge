@@ -40,8 +40,9 @@ The ETL process is divided into three steps (or jobs). Each step is assigned to 
 
 1. Sign in with the url, username, and password provided with the submission of this assignment.
 2. This account has access to my AWS account, but with very specific IAM policies. You will only have access to specific S3 buckets, AWS Glue Jobs and Workflows used for this assignment.
-3. Access the AWS Glue Jobs and workflow by typing "AWS Glue" into the search bar, clicking on "AWS Glue", and selecting "Jobs" or "workflows" accordingly on the left-side menu.
-4. Similarly, to access the S3 bucket, type "S3" into the search bar, and click on "S3". The assignment data is found in the bucket with the name "jua-code-challenge-data".
+3. Set your region to 'eu-central-1'.
+4. To access the AWS Glue Jobs and workflowm, type "AWS Glue" into the search bar, clicking on "AWS Glue", and selecting "Jobs" or "workflows" accordingly on the left-side menu.
+5. Similarly, to access the S3 bucket, type "S3" into the search bar, and click on "S3". The assignment data is found in the bucket with the name "jua-code-challenge-data".
 
 ## Instruction for running the Jupyter Notebooks
 
