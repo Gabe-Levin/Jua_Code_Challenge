@@ -10,7 +10,7 @@ for day in range(1,32):
     # Read parquet files by day using chunked=True to reduce size of dataframes, greatly reducing memory requirements for processing
     dfs = s3.read_parquet(path = s3_url, chunked=True)
     
-    # For each day, (1) reindex by time field of the chuncked dataframes and convert to datetime, (2) combine them, and (3) then save the result to s3
+    # For each day, (1) reindex by time field of the chuncked dataframes, (2) combine them, and (3) then save the result to s3
     df_by_day = pd.DataFrame()
     for df in dfs:
         # Reset index so the time1 is only index and convert to datetime
