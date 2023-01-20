@@ -1,5 +1,5 @@
 {
-  "name" : "Reindex Parquet using Datetime",
+  "name" : "Reindex Parquet",
   "description" : "",
   "role" : "arn:aws:iam::588810584888:role/glue-jua-full-access-delete",
   "executionProperty" : {
@@ -7,7 +7,7 @@
   },
   "command" : {
     "name" : "pythonshell",
-    "scriptLocation" : "s3://jua-code-challenge-data/scripts/Reindex Parquet using Datetime.py",
+    "scriptLocation" : "s3://jua-code-challenge-data/scripts/Reindex Parquet.py",
     "pythonVersion" : "3.9"
   },
   "defaultArguments" : {
@@ -28,6 +28,6 @@
     "provider" : "GITHUB",
     "repository" : "Jua_Code_Challenge",
     "branch" : "glue-jobs-update",
-    "folder" : "jobs/2/Reindex Parquet using Datetime"
+    "folder" : "jobs/2/Reindex Parquet"
   }
 }
