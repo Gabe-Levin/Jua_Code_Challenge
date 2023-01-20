@@ -23,12 +23,11 @@ The ETL process is divided into three steps (or jobs). Each step is assigned to 
     - The data is accessed using xarray
     - And then exported by day as parquet files to my s3 bucket
 
-2.  "Reindex Parquet using Datetime"
+2.  "Reindex Parquet"
 
     - In this job, data is extracted from my s3 as parquet
     - The data is converted into chuncked pandas dataframes using aws wrangler
     - The dataframes are reindexed from multi-index to single-index (to support dask if later integrated)
-    - The index is then converted into a datetime object
     - The dataframes are grouped by day and then saved as a compressed parquet file using gzip compression
 
 3.  "Add H3 to Reindexed Parquet"
